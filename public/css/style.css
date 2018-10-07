@@ -1,0 +1,67 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+section {
+  margin: 1.5em auto;
+  width: 400px;
+}
+button {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 160px;
+  height: 160px;
+  border: 0;
+  border-radius: 50%;
+  padding: .7em 1em;
+  margin: 4em auto 3em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #82c91e 0%, #82c91e 80%, #82c91e 100%);
+  box-shadow: 2px 5px 30px #82c91e;
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+button .fas {
+  font-size: 62px;
+  margin: 0;
+  text-shadow: 1px 2px 2px #82c91e;
+}
+
+button.disconnect-phone {
+  background: linear-gradient(180deg, #f783ac 0%, #f783ac 80%, #f783ac 100%);
+  box-shadow: 2px 5px 30px #f783ac;
+}
+
+button.disconnect-phone .fas {
+  text-shadow: 1px 2px 2px #f783ac;
+}
+
+button:hover {
+  transform: scale(.92);
+}
+button:active {
+  filter: brightness(.8);
+}
+button:focus {
+  outline: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}

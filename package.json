@@ -1,0 +1,40 @@
+{
+  "name": "ask.ai",
+  "version": "1.0.0",
+  "description": "reply bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "lint": "eslint **/*.js --ignore-path .gitignore",
+    "lint:fix": "yarn lint -- --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/keviveks/ask.ai.git",
+  "keywords": [
+    "reply",
+    "bot",
+    "ask"
+  ],
+  "author": "Vivek S <keviveks@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keviveks/ask.ai/issues"
+  },
+  "homepage": "https://github.com/keviveks/ask.ai#readme",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "dialogflow": "^0.7.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-basic-auth": "^1.1.5",
+    "mongoose": "^5.3.1",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.4"
+  }
+}
